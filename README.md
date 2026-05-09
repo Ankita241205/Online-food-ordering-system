@@ -52,7 +52,7 @@ The Online Food Ordering Website is a web-based application developed to simplif
 4. Import the SQL database into phpMyAdmin
 5. Open browser and run:
    ```bash
-   http://localhost/project-folder-name
+   http://localhost/food-project
    ```
 
 ## Database
@@ -65,15 +65,8 @@ Import the provided `.sql` file into phpMyAdmin before running the project.
 - Customer Reviews and Ratings
 - AI-Based Food Recommendations
 
-## Screenshots
-(Add your project screenshots here)
-
----
-
 ## Author
 Ankita Wavhal
-
----
 
 ## License
 This project is developed for educational purposes.
