@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2> Place Your Order</h2>
+
+<form action="order.php" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required><br>
+
+    <input type="text" name="phone" placeholder="Phone Number" required><br>
+
+    <textarea name="address" placeholder="Address" required></textarea><br>
+
+    <select name="payment" required>
+        <option value="COD">Cash on Delivery</option>
+        <option value="Online">Online Payment</option>
+    </select><br>
+
+    <input type="hidden" name="food" id="food">
+
+    <button type="submit">Place Order</button>
+
+</form>
+
+<br>
+<a href="cart.html">Back to Cart</a>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+if (cart.length === 0) {
+    alert("Your cart is empty!");
+    window.location.href = "cart.html";
+} else {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// Convert objects to readable text
+let foodList = cart.map(item => item.name + " (x" + item.qty + ")");
+
+document.getElementById("food").value = foodList.join(", ");
+}
+</script>
+
+</body>
+</html>

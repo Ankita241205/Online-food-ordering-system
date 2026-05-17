@@ -1,0 +1,132 @@
+/* Background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+h1, h2 {
+    color: #333;
+}
+
+/* Navigation Link */
+a {
+    text-decoration: none;
+    background: #ff7a18;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #ff4b2b;
+}
+
+/* Food Cards */
+.food {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.food:hover {
+    transform: scale(1.1);
+}
+
+/* Buttons */
+button {
+    background: #ff7a18;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4b2b;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    margin: 30px auto;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+input, textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Cart List */
+li {
+    list-style: none;
+    background: white;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.food {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cart Container */
+#cartContainer {
+    margin: 20px auto;
+    width: 300px;
+}
+
+/* Cart Item */
+.cart-item {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Total */
+h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Form Button */
+form button {
+    width: 100%;
+    font-size: 16px;
+}
